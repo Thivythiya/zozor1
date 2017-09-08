@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			margin: 20px;
+		}
+		.menu {
+		   	list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		}
+		.list1{
+		float: right;
+		}
+		@font-face{
+			font-family: myFirstFont;
+			src: url(tp_images_fonts/fonts/dayrom.woff);
+		}
+		@font-face{
+			font-family: mySecondFont;
+			src: url(tp_images_fonts/fonts/ballpark.woff);
+		}
+		.div2{
+			float: right;
+		}
+		.a1{
+			text-decoration:none;
+			color: black;
+			text-align: center;
+			padding-right: 50px;
+			font-family: myFirstFont;
+			font-size: 21px;
+		}
+		.img1{
+			float: left;
+			padding-left: 10px;
+		}
+		#h2{
+			padding-top: 35px;
+			padding-left: 80px;
+			font-family: mySecondFont;
+			font-size: 35px;
+		}
+		#span1{
+			font-family: myFirstFont;
+			font-size: 20px;
+			float: left;
+		}
+		.linespace{
+			line-height: 0.5;
+		}
+		.img3{
+			float: left;
+		}
+		.cls2{
+			font-family: myFirstFont;
+			font-size: 17px;
+			padding-top: 13px;
+			padding-left: 50px;
+		}
+		.cls1{
+			float:left;
+			font-family: myFirstFont;
+			font-size: 14px;
+			width:70%;
+		}
+		.cls1,.cls3{
+			display: inline-block;
+			margin: 10px;
+		}
+		.cls3{
+			margin: 20px;
+			margin-top: -20px;
+			z-index: 5;
+			width: 30%;
+			width: 235px;
+			height: 430px;
+			background-color: #767272;
+			color: white;
+			font-family: myFirstFont;
+			position: relative;
+			border-radius: 10px;
+		}
+		.cls1{
+			float:left;
+			font-family: myFirstFont;
+			font-size: 14px;
+			width:70%;
+		}
+		.cls1,.cls3{
+			display: inline-block;
+			margin: 10px;
+		}
+		.cls3:after, .cls3:before {
+			right: 100%;
+			top: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+		.cls3:after {
+			border-width: 10px;
+			margin-top: -30px;
+		}
+		.cls3:before {
+			border-right-color:#767272;
+			border-width: 10px;
+			margin-top: -120px;
+		}
+		.text{
+			text-align: justify;
+		}
+		.dv1{
+			width: 100%;
+			height: 10%;
+		}
+		#para{
+			padding-left: 10px;
+		}
+		.para1{
+			font-size: 13px;
+			text-align: justify;
+			padding: 10px;
+		}
+		hr { 
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			height:3px;
+			background:url(tp_images_fonts/images/line.png);
+			border:0;
+			text-align: center;
+		}
+		hr.top:after{
+			content: url(tp_images_fonts/images/top.png);
+		}
+		#foot{
+			font-family: myFirstFont;
+		}
+		.hd{
+			font-size: 14px;
+		}
+		#d1,#d2,#d3{
+			display: inline-block;
+		}
+		#d1{
+			height: 50px;
+			width: 25%;
+		}
+		#d2{
+			height: 50px;
+			width:36%;
+		}
+		#d3{
+			height: 50px;
+			width: 36%;
+		}
+		#pa1{
+			font-size: 13px;
+		}
+		.list{
+			list-style-type: none;
+			font-size: 13px;
+			column-count:2;
+		}
+		.list li:before{
+		    content: url(tp_images_fonts/images/external_link.png);
+		  }
+		.divi{
+			display: inline;
+			width: 15%;
+		}
+		#last{
+		 	line-height: 4.0;
+		}
+		.thiv{
+		    background-image: url(tp_images_fonts/images/sanfrancisco.jpg);
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    min-height: 50px;
+		    color: white;
+		    padding-top:200px;
+		    margin: 0;
+		    text-align: bottom;
+		    border-radius: 10px;
+		}	
+		.a2{
+			text-decoration: none;
+			color: white;
+			background: #424242;
+		}
+		#sanp{
+			color: white;
+			width: 75%;
+			padding-left: 10px;
+			text-align: left;
+		}
+		#sand{
+			background:url(tp_images_fonts/images/red_background.png);
+			float: right;
+			width: 80px;
+			margin-top: 15px;
+			margin-right: 5px;
+			text-align: center;
+			height: 20px;
+			border-radius: 2.5px;
+		}
+		#sand,#sanp{
+			display: inline-block;
+			font-family: myFirstFont;
+			font-size: 13px;
+		}
+		#Name{
+			color: white;
+			font-family: myFirstFont;
+			font-size: 13px;
+		 }
+		 #foot1{
+		 	background-color:black;
+		 	background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6));
+		 	height: 50px;
+		 	border-radius: 10px;
+		 }
+		#top{
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body background="tp_images_fonts/images/yellow_background.png">
+	<header id="head" class="head1">
+		<div class="div1">
+			<div id="logo" class="logo1">
+				<div class="div1">
+					<img class="img1" src="tp_images_fonts/images/zozor_logo.png" alt="image is not available" height="" width="">
+					<h2 class="linespace" id="h2">Zozor</h2>
+					<span class="linespace" id="span1">Travel diaries</span>
+				</div>
+			</div>	
+		</div>
+		<div class="div2">
+			<div class="col">
+				<ul class="menu">
+					<li class="list1"><a href="#contact" class="a1">CONTACT</a></li>
+					<li class="list1"><a href="#resume" class="a1">RESUME</a></li>
+					<li class="list1"><a href="#blog" class="a1">BLOG</a></li>
+					<li class="list1"><a href="#home" class="a1">HOME</a></li>
+				</ul>
+			</div>
+		</div>
+	</header><br><br>
+	<hr><br>
+	<div class="thiv">
+		<footer id=foot1>
+			<a class="a2" href="#">
+				<div class="Name">
+					<p id="sanp">Reflections on my holiday in th United States...</p>
+		            <div id="sand">
+		                See article <img src="tp_images_fonts/images/small_arrow.png">
+					</div>       
+				</div>
+			</a>
+		</footer>	
+	</div>
+	<div id="div5">
+		<div id="cl1">
+			<img class="img3" src="tp_images_fonts/images/pin.png"><h2 class="cls2">I'M A GREAT TRAVELLEER</h2><br>
+		</div>
+			<div class="cls1">
+				<p class="text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem et semper purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vel enim mi in lobortis sem. Vestibulum luctus elit eu libero ultrices id ferrmenum sem sagittis. Nulla imperdiet mauris sed sapien dignissim id aliquam est aliquam. Maecenas non odio ipsum, a elementum nisi. Mauris non erat eu erat placerat convallis. Mauris in pretium urna. Cras laoreet molestie odio, consequat consequat velit commodo eu. Inter vitae lectus ac nunc posure pellentesque non at eros. Susspendisse non lectus lorem.<br><br>
+
+				Vivamus sed libero nec mauris pulvinar facilisis ut non sem. Quisque mollis ullamcorper diam vel faucius. Vestibulum sollicitudin facilisis feugiat. Nulla euismod sodales hendrerit. Donec quis orci arcu. Vivamus fermentum magna a erat ullamcorper dignissim pretium nunc aliquam. Aenean pulvinar condimentum enim a dignissim. Vivamus sit amet lectus at ante adipiscing adipiscing eget vitae felis. In at fringilla est. Cras id velit ut magna rutrum commodo. Etiam ut scelerisque purus. Duis risus elit venenatis vel rutrum in, imperdiet in quam. Sed vestibulum, libero ut bibendum consectetur, eros ipsum ultrices nisl, in rutrum diam augue non tortor. Fusce nec massa et risus dapibus aliquam vitae nec diam.<br><br>
+
+				Phasellus ligula massa, congue ac vulputate non, dignissim at augue. Sed auctor fringilla quam quis porttitor. Praesent vitae dignissim magna. Pellentesque quis sem purus, vel elementum mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maescenas consectetur euismod urna. In hac habitasse platea dictumst. Quisque tincidunt porttitor vestibulum. Ut iaculis, lacus at molestie lacinia, ipsum mi adipiscing ligula, vel mollis sem risus eu lectus. Nunc elit quam rutrum ut dignissim sit amet, egestas at sem.
+				</p>
+			</div>
+			<div class="cls3">
+				<p id="para">ABOUT THE AUTHOR</p>
+				<center>
+				<img id="image" src="tp_images_fonts/images/Zozor.png" style="border: 1px solid black;">
+				</center>
+				<p class="para1">Let me introduce myself: My name's Zozor. I was born on 23 November 2005.<br><br>A bit meager, is it not? This is why I've now decided to write my viogrpgy to let my readers know who I really am.</p>
+				<img src="tp_images_fonts/images/facebook.png" style="padding-left: 5px">
+				<img src="tp_images_fonts/images/twitter.png">
+				<img src="tp_images_fonts/images/vimeo.png">
+				<img src="tp_images_fonts/images/flickr.png">
+				<img src="tp_images_fonts/images/rss.png">
+			</div>
+		
+	</div>
+	<hr class="top">
+	<footer id="foot">
+		<div id="d1">
+			<P class="hd" id="last">MY TWEET</P>
+			<p id="pa1">Hee-haw!</p> <p>12/05 23:12</p>
+		</div>
+		<div id="d2">
+			<P class="hd">MY PICTURES</P>
+			<img src="tp_images_fonts/images/pic1.jpg">
+			<img src="tp_images_fonts/images/pic2.jpg">
+			<img src="tp_images_fonts/images/pic3.jpg">
+			<img src="tp_images_fonts/images/pic4.jpg">
+		</div>
+		<div id="d3">
+			<P class="hd" style="padding-left: 50px">MY FRIENDS</P>
+			<div class="divi"></div>
+			<ul class="list">
+				<li>Pupi the rabbit</li>
+				<li>Mr Baobab</li>
+				<li>Kaiwaii</li>
+				<li>Perceval.eu</li>
+				<li>Ji</li>
+				<li>Super cucumber</li>
+				<li>Prince</li>
+				<li>Mr Fan</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
